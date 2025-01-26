@@ -16,6 +16,34 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* All Fonts */
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Fredoka-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Fredoka-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Fredoka-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Fredoka-Light.ttf") format("truetype");
 }
