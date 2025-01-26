@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "@src/components/Navbar/Navbar";
+// import Navbar from "@src/components/Navbar/Navbar";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoXbox } from "react-icons/io";
 import Footer from "@src/components/Footer/Footer";
