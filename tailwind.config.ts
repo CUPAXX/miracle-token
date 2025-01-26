@@ -13,7 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        fredoka: "Fredoka, sans-serif",
+        cinzel: "Cinzel, sans-serif",
+        cinzelAlt: "CinzelAlt, sans-serif",
       },
     },
   },

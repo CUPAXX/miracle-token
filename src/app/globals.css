@@ -21,29 +21,43 @@ body {
 
 /* All Fonts */
 @font-face {
-  font-family: "Fredoka";
+  font-family: "Cinzel";
   font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Fredoka-Bold.ttf") format("truetype");
+  font-weight: 800;
+  src: url("../fonts/Cinzel-Black.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Fredoka";
+  font-family: "Cinzel";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Fredoka-Medium.ttf") format("truetype");
+  font-weight: 600;
+  src: url("../fonts/Cinzel-Bold.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Fredoka";
+  font-family: "Cinzel";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Fredoka-Regular.ttf") format("truetype");
+  src: url("../fonts/Cinzel-Regular.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Fredoka";
+  font-family: "CinzelAlt";
   font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Fredoka-Light.ttf") format("truetype");
+  font-weight: 800;
+  src: url("../fonts/CinzelDecorative-Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "CinzelAlt";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/CinzelDecorative-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "CinzelAlt";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Cinzel-Regular.otf") format("truetype");
 }

@@ -1,92 +1,44 @@
 "use client";
 
 import Image from "next/image";
-// import Navbar from "@src/components/Navbar/Navbar";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoXbox } from "react-icons/io";
 import Footer from "@src/components/Footer/Footer";
 import AddressButton from "@src/components/AddressButton/AddressButton";
+import TwitterButton from "@src/components/TwitterButton/TwitterButton";
+import FeatureCards from "@src/components/Cards/FeatureCards";
+import { featureData } from "@src/utils/staticData";
 
 export default function Home() {
   return (
-    <div className="text-white bg-gradient-to-r from-purple-600/20 to-green-600/20 min-h-lvh flex flex-col">
+    <div className=" bg-gradient-to-r from-purple-600/20 to-green-600/20 min-h-lvh flex flex-col">
       <main className="flex flex-1 min-h-lvh">
-        {/* <Navbar /> */}
         <section className="flex flex-1 flex-col justify-center items-center">
-          <h1 className="text-[10rem] font-fredoka font-medium pb-6">
+          <h1 className="text-7xl md:text-[10rem] font-cinzel font-medium pb-6 bg-gradient-to-b from-[#FCFBE0]  to-[#C1B798] inline-block text-transparent bg-clip-text">
             MIRACLE
           </h1>
-          <p className="text-2xl">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <p className="text-lg md:text-2xl text-center px-4 text-white">
+            Building and Scaling Immersive Conversational AI platforms for
+            Consumer Markets.
           </p>
           <AddressButton />
-          <div className="flex gap-2 bg-purple-500 px-20 py-2 text-black tracking-widest uppercase cursor-pointer hover:text-slate-700">
-            <FaXTwitter size={25} />
-            <p>Talk to Miracle</p>
-          </div>
-          <p className="text-sm py-2">A Miracle tim</p>
+          <TwitterButton type="base" />
         </section>
       </main>
 
-      <section className="min-h-lvh mx-16">
-        <h2 className="text-3xl font-medium mt-20 text-center">Features</h2>
+      <section className="mx-16 text-white my-20">
+        <h2 className="text-3xl font-medium  text-center">Features</h2>
         <div className="grid grid-cols-3 gap-8 mt-14">
-          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
-            <div className="bg-purple-500 p-4 w-min rounded-lg">
-              <FaXTwitter size={30} />
-            </div>
-            <p className="text-xl font-semibold group-hover:text-green-500 ">
-              Lorem Ipsum
-            </p>
-            <p className="text-sm opacity-50">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit
-            </p>
-          </div>
-          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
-            <div className="bg-purple-500 p-4 w-min rounded-lg">
-              <FaXTwitter size={30} />
-            </div>
-            <p className="text-xl font-semibold group-hover:text-green-500 ">
-              Lorem Ipsum
-            </p>
-            <p className="text-sm opacity-50">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit
-            </p>
-          </div>
-          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
-            <div className="bg-purple-500 p-4 w-min rounded-lg">
-              <FaXTwitter size={30} />
-            </div>
-            <p className="text-xl font-semibold group-hover:text-green-500 ">
-              Lorem Ipsum
-            </p>
-            <p className="text-sm opacity-50">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit
-            </p>
-          </div>
-          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
-            <div className="bg-purple-500 p-4 w-min rounded-lg">
-              <FaXTwitter size={30} />
-            </div>
-            <p className="text-xl font-semibold group-hover:text-green-500 ">
-              Lorem Ipsum
-            </p>
-            <p className="text-sm opacity-50">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit
-            </p>
-          </div>
+          {featureData.map((res, i) => (
+            <FeatureCards
+              key={i}
+              icon={res.icon}
+              label={res.label}
+              description={res.description}
+            />
+          ))}
         </div>
       </section>
 
-      <section className="min-h-lvh mx-16 flex flex-col items-center">
-        <h2 className="text-3xl font-medium mt-20 text-center">
-          MIRACLE - New World Token
-        </h2>
+      <section className="mx-16 flex flex-col items-center text-white my-20">
         <div className="h-[10rem] w-[10rem] my-12 relative">
           <Image
             src="/assets/logo miracle.jpg"
@@ -97,107 +49,105 @@ export default function Home() {
             className="object-cover z-10 rounded-full"
           />
         </div>
-        <div className="max-w-[60rem] text-justify flex flex-col gap-5 text-sm">
+        <div className="max-w-[50rem] text-justify flex flex-col gap-5 text-sm">
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using Content here, content
-            here, making it look like readable English.
+            At MiracleAI, our mission is to build and scale immersive
+            conversational AI platforms that transform consumer experiences.
+            Founded by industry experts, we create cutting-edge AI products and
+            drive their growth with our high-growth expertise.
           </p>
           <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for lorem ipsum will
-            uncover many web sites still in their infancy. Various versions have
-            evolved over the years, sometimes by accident, sometimes on purpose
-            (injected humour and the like).
+            Our journey is rooted in a commitment to excellence, innovation, and
+            delivering tangible results. We combine diverse skills to develop AI
+            solutions that meet consumer needs and thrive in the market.
           </p>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source.
+            Join us as an employee or freelancer, and together, let&apos;s push
+            the boundaries of AI and shape the future of consumer technology.
           </p>
         </div>
-        <div className="flex gap-2 border border-purple-300 text-purple-300 px-20 py-2  tracking-widest uppercase mt-12 cursor-pointer hover:bg-purple-500 hover:text-black">
-          <FaXTwitter size={25} />
-          <p>Talk to Miracle</p>
-        </div>
+        <TwitterButton type="outline" />
       </section>
 
-      <section className="min-h-lvh mx-24">
-        <h2 className="text-2xl font-medium mt-20 text-center flex flex-col uppercase">
-          Recent News
+      <section className="mx-24 text-white my-20">
+        <h2 className="text-2xl font-medium text-center flex flex-col uppercase">
+          our integrations
         </h2>
-        <div className="grid grid-cols-3 gap-5 mt-10">
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              miracle whitepaper
+        <div className="grid grid-cols-4 gap-10 mt-10">
+          <div className="border border-emerald-500  cursor-pointer bg-black rounded-md px-8 py-5 flex flex-col items-center gap-5 relative hover:scale-110 transition-all duration-200">
+            <div className=" bg-emerald-900 opacity-25 absolute top-0 h-full w-full" />
+            <div className="w-12 h-12 relative">
+              <Image
+                src="/assets/logo-pump.svg"
+                fill
+                sizes="100%"
+                alt="logo"
+                quality={80}
+                className="object-cover z-10"
+              />
+            </div>
+            <h1 className="text-lg text-center text-emerald-500 z-10">
+              Pump.fun
             </h1>
+            <p className="text-center opacity-60 text-sm">
+              Create a memecoin directly from chat, or trade coins currently
+              launching.
+            </p>
           </div>
-
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              miracle whitepaper
-            </h1>
+          <div className="border border-teal-500  cursor-pointer bg-black rounded-md px-8 py-5 flex flex-col items-center gap-5 relative hover:scale-110 transition-all duration-200">
+            <div className=" bg-teal-900 opacity-25 absolute top-0 h-full w-full" />
+            <div className="w-12 h-12 relative">
+              <Image
+                src="/assets/logo-jupiter.svg"
+                fill
+                sizes="100%"
+                alt="logo"
+                quality={80}
+                className="object-cover z-10"
+              />
+            </div>
+            <h1 className="text-lg text-center text-teal-500 z-10">Jupiter</h1>
+            <p className="text-center opacity-60 text-sm">
+              Trade with optimal slippage and support for all token.
+            </p>
           </div>
-
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              miracle whitepaper
+          <div className="border border-gray-500  cursor-pointer bg-black rounded-md px-8 py-5 flex flex-col items-center gap-5 relative hover:scale-110 transition-all duration-200">
+            <div className=" bg-gray-900 opacity-25 absolute top-0 h-full w-full" />
+            <div className="w-12 h-12 relative">
+              <Image
+                src="/assets/logo-screener.svg"
+                fill
+                sizes="100%"
+                alt="logo"
+                quality={80}
+                className="object-cover z-10"
+              />
+            </div>
+            <h1 className="text-lg text-center text-gray-500 z-10">
+              DexScreener
             </h1>
+            <p className="text-center opacity-60 text-sm">
+              Track and analyze coin data across Solana.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section className="min-h-lvh mx-24">
-        <h2 className="text-2xl font-medium mt-20 text-center flex flex-col uppercase">
-          Planned Updates
-        </h2>
-        <div className="grid grid-cols-3 gap-5 mt-10">
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              white paper
+          <div className="border border-yellow-500  cursor-pointer bg-black rounded-md px-8 py-5 flex flex-col items-center gap-5 relative hover:scale-110 transition-all duration-200">
+            <div className=" bg-yellow-900 opacity-25 absolute top-0 h-full w-full" />
+            <div className="w-12 h-12 relative">
+              <Image
+                src="/assets/logo-birdeye.svg"
+                fill
+                sizes="100%"
+                alt="logo"
+                quality={80}
+                className="object-cover z-10"
+              />
+            </div>
+            <h1 className="text-lg text-center text-yellow-500 z-10">
+              Birdeye
             </h1>
-          </div>
-
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              research paper
-            </h1>
-          </div>
-
-          <div className="border border-green-900 hover:border-green-500  cursor-pointer bg-black rounded-md px-8 py-14 flex flex-col items-center gap-8 relative group">
-            <div className=" group-hover:bg-green-900 group-hover:opacity-25 absolute top-0 h-full w-full" />
-
-            <IoLogoXbox className="mt-8 z-10" size={60} />
-            <div className="w-1/2 h-[1px] bg-white z-10" />
-            <h1 className="uppercase text-5xl text-center tracking-widest z-10">
-              integration paper
-            </h1>
+            <p className="text-center opacity-60 text-sm">
+              Real-time charts and comprehensive analytics.
+            </p>
           </div>
         </div>
       </section>
