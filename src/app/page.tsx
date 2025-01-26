@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="text-white bg-gradient-to-r from-purple-600/20 to-green-600/20 min-h-lvh flex flex-col">
       <main className="flex flex-1 min-h-lvh">
-        <Navbar />
+        {/* <Navbar /> */}
         <section className="flex flex-1 flex-col justify-center items-center">
           <h1 className="text-[10rem] font-fredoka font-medium pb-6">
             MIRACLE
@@ -32,7 +32,7 @@ export default function Home() {
       <section className="min-h-lvh mx-16">
         <h2 className="text-3xl font-medium mt-20 text-center">Features</h2>
         <div className="grid grid-cols-3 gap-8 mt-14">
-          <div className="p-8 bg-zinc-900 rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
+          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
             <div className="bg-purple-500 p-4 w-min rounded-lg">
               <FaXTwitter size={30} />
             </div>
@@ -44,7 +44,7 @@ export default function Home() {
               consectetur, adipisci velit
             </p>
           </div>
-          <div className="p-8 bg-zinc-900 rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
+          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
             <div className="bg-purple-500 p-4 w-min rounded-lg">
               <FaXTwitter size={30} />
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
               consectetur, adipisci velit
             </p>
           </div>
-          <div className="p-8 bg-zinc-900 rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
+          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
             <div className="bg-purple-500 p-4 w-min rounded-lg">
               <FaXTwitter size={30} />
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
               consectetur, adipisci velit
             </p>
           </div>
-          <div className="p-8 bg-zinc-900 rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
+          <div className="p-8 bg-black rounded-md flex flex-col gap-4 shadow-md border border-zinc-800 hover:border-green-500 hover:transition-all hover:scale-110 duration-200 group">
             <div className="bg-purple-500 p-4 w-min rounded-lg">
               <FaXTwitter size={30} />
             </div>
