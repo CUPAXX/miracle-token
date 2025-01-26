@@ -24,7 +24,7 @@ export default function Home() {
         </section>
       </main>
 
-      <section className="mx-16 text-white my-20">
+      <section className="mx-16 text-white my-24">
         <h2 className="text-3xl font-medium  text-center">Features</h2>
         <div className="grid grid-cols-3 gap-8 mt-14">
           {featureData.map((res, i) => (
@@ -38,8 +38,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-16 flex flex-col items-center text-white my-20">
-        <div className="h-[10rem] w-[10rem] my-12 relative">
+      <section className="mx-16 flex flex-col items-center text-white my-24">
+        <div className="h-[10rem] w-[10rem] mb-12 relative">
           <Image
             src="/assets/logo miracle.jpg"
             fill
@@ -69,7 +69,7 @@ export default function Home() {
         <TwitterButton type="outline" />
       </section>
 
-      <section className="mx-24 text-white my-20">
+      <section className="mx-24 text-white my-24">
         <h2 className="text-2xl font-medium text-center flex flex-col uppercase">
           our integrations
         </h2>
