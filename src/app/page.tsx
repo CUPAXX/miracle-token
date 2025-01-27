@@ -24,9 +24,11 @@ export default function Home() {
         </section>
       </main>
 
-      <section className="mx-16 text-white my-24">
-        <h2 className="text-3xl font-medium  text-center">Features</h2>
-        <div className="grid grid-cols-3 gap-8 mt-14">
+      <section className=" text-white mx-10 md:mx-16 my-20 md:my-24">
+        <h2 className="text-2xl md:text-3xl font-medium  text-center">
+          Features
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
           {featureData.map((res, i) => (
             <FeatureCards
               key={i}
@@ -38,7 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-16 flex flex-col items-center text-white my-24">
+      <section className=" flex flex-col items-center text-white mx-10 md:mx-16  my-20 md:my-24">
         <div className="h-[10rem] w-[10rem] mb-12 relative">
           <Image
             src="/assets/logo miracle.jpg"
@@ -49,7 +51,7 @@ export default function Home() {
             className="object-cover z-10 rounded-full"
           />
         </div>
-        <div className="max-w-[50rem] text-justify flex flex-col gap-5 text-sm">
+        <div className="max-w-[50rem] text-justify flex flex-col gap-5 text-xs md:text-sm">
           <p>
             At MiracleAI, our mission is to build and scale immersive
             conversational AI platforms that transform consumer experiences.
@@ -69,11 +71,11 @@ export default function Home() {
         <TwitterButton type="outline" />
       </section>
 
-      <section className="mx-24 text-white my-24">
+      <section className=" text-white mx-10 md:mx-16  my-20 md:my-24">
         <h2 className="text-2xl font-medium text-center flex flex-col uppercase">
           our integrations
         </h2>
-        <div className="grid grid-cols-4 gap-10 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10">
           <div className="border border-emerald-500  cursor-pointer bg-black rounded-md px-8 py-5 flex flex-col items-center gap-5 relative hover:scale-110 transition-all duration-200">
             <div className=" bg-emerald-900 opacity-25 absolute top-0 h-full w-full" />
             <div className="w-12 h-12 relative">

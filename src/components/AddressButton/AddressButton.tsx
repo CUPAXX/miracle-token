@@ -18,12 +18,12 @@ export default function AddressButton() {
     <div className="flex flex-col items-center pt-8 pb-8 text-white">
       <p className=" text-lg">Contact Address (SOL)</p>
       <div
-        className="cursor-pointer flex items-center justify-center gap-2 bg-zinc-800 w-[22rem] md:w-[31rem] py-2 my-2 rounded-md text-xs lg:text-base"
+        className="cursor-pointer flex items-center justify-center gap-2 bg-zinc-800 w-[20rem] md:w-[31rem] py-2 my-2 rounded-md text-xs lg:text-base"
         onClick={handleButtonCopy}
       >
         {!copyButton ? (
           <>
-            <BiCopy className="text-base lg:text-3xl" />
+            <BiCopy className="text-sm lg:text-3xl" />
             <p>{walletAddress}</p>
           </>
         ) : (
